@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    A: <input type="number" id=num1>
+    B: <input type="number" id=num2>
+    <button id="btn">Submit</button>
+    <script>
+        var a = document.getElementById('num1');
+        var b = document.getElementById('num2');
+        const submit = document.getElementById('btn');
+        submit.addEventListener('click', function () {
+            console.log(Number(a.value) + Number(b.value));
+        })
+    </script>
+</body>
+
+</html>
