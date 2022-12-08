@@ -5,10 +5,13 @@ var Fruits = {
     about: function () {
         console.log(`The fruit ${this.Fruit_name} in the place ${this.Place} is ${this.Price} per kg`);
     }
+
 }
 Fruits.about();
 Fruits.Species = "Peach";
 console.log(Fruits);
+Fruits.color = "red";
+console.log(Fruits.color);
 // objects using constructor
 function Course(name, fees, duration) {
     this.name = name;
